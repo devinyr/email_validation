@@ -1,0 +1,19 @@
+<html>
+  <body>
+  	{% if neaddr != '' %}
+    <p>The email address you entered "{{ neaddr }}"" is a VALID email address! Thank you!</p>
+    {% endif %}
+    <p>Email Addresses Entered:</p>
+
+    {% for emailaddr in emailaddrs: %}
+	    <table>
+	    	<tr>
+	    		<td>{{emailaddr['email']}}</td>
+	    		<td>             </td>
+	    		<td>{{emailaddr['created_at']}}</td>
+	    	</tr>
+	    </table>
+    {% endfor %}
+
+  </body>
+</html>

@@ -7,8 +7,8 @@
 	<h1> Enter Email </h1>
 	{% with messages = get_flashed_messages() %}
 		{% if messages %}
-			{% for messages in messages %}
-				<p>{{messages}}</p>
+			{% for message in messages %}
+				<p>{{message}}</p>
 			{% endfor %}
 		{% else %}
 		{% endif %}
